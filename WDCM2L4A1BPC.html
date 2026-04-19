@@ -1,0 +1,101 @@
+<!--
+1) Start the HTML document with `<!DOCTYPE html>` to indicate this is an HTML5 webpage.
+
+2) Open the `<html>` tag to wrap the entire webpage content.
+
+3) Inside the `<head>` section:
+   a) Link an external CSS file using:
+      `<link href="style.css" rel="stylesheet" type="text/css" />`
+   (This file will style the webpage.)
+
+4) Inside the `<body>` section (visible content):
+
+5) Add a main heading using `<h1>`:
+   a) Displays: "Welcome to the Space Explorer's Club".
+
+6) Create an unordered list using `<ul>`:
+   a) Each list item is written using `<li>`.
+   b) The list shows topics like Moon Missions, Mars Rovers, etc.
+
+7) Add two paragraphs using `<p>` tags:
+   a) The first paragraph explains interest in space exploration.
+   b) The second paragraph talks about exploring beyond the Moon.
+
+8) Add hyperlinks using `<a>` tags:
+   a) "Join our Mission"
+   b) "Latest Space News"
+   c) "Gallery of the Universe"
+   d) Each uses `href="#"` as a placeholder link (does not go to a real page yet).
+
+9) Close the `<body>` tag and then close the `<html>` tag to end the document.
+-->
+   <!DOCTYPE html>
+   <html>
+      <head>
+         <link href="style.css" rel="stylesheet" type="text/css" /> 
+      </head>
+      <body>
+         <h1>Welcome to the Space Explorer's Club</h1>
+         <ul>
+            <li>Moon Missions</li>
+            <li>Mars Rovers</li>
+            <li>Deep Space Probes</li>
+         </ul>
+         <p>We are a group of space enthusiasts dedicated to exploring the cosmos.</p>
+         <p>Join us as we venture beyond the Moon and into the unkown!</p>
+         <a href="#">Join our Mission</a>
+         <a href="#">Latest Space News</a>
+         <a href="#">Gallery of the Universe</a>
+         <a href="#">Contact Us</a>
+      </body>
+   </html>
+<style>
+   body {
+
+font-family: 'Arial', sans-serif;
+
+background-color:deepskyblue;
+
+color: #C9D1D9;
+
+}
+h1 {
+   color:aqua
+}
+a {
+   color:aquamarine;
+   text-decoration:none;
+}
+a:hover {
+   color:blanchedalmond;
+}
+ul>li {
+   font-weight:bolder;
+}
+h1+p {
+   background-color:chocolate;
+   padding:10px;
+   border-radius:5px;
+}
+ul li:hover {
+   color:crimson;
+}
+ul li:nth-child(3) {
+
+background-color:darkslateblue;
+
+}
+p:not(:first-of-type) {
+   text-decoration:underline;
+ }
+ul li::before {
+   content:"";
+}
+a::after {
+   content:"";
+}
+p::first-letter {
+   font-size:200%;
+   color:cornflowerblue;
+}
+</style>
